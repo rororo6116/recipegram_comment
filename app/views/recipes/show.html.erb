@@ -83,7 +83,7 @@
                 <% if @comments %>
                   <% @comments.each do |comment| %>
                     <p>
-                      <strong><%= link_to @comment.user, "/users/#{comment.user_id}" %>：</strong>
+                      <strong><%= link_to @comment.user.username, "/users/#{comment.user_id}" %>：</strong>
                     <%= comment.text %>
                     </p>
                   <% end %>
